@@ -2,9 +2,9 @@ def delete_at(my_list, idx):
     if idx < 0 or idx >= len(my_list):
         return my_list
 
-    new_list = []
+    x = []
     for i in range(len(my_list)):
         if i != idx:
-            new_list.append(my_list[i])
+            x.append(my_list[i])
 
-    return new_list
+    return x
