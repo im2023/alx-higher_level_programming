@@ -1,15 +1,15 @@
 #!/usr/bin/python3
 class Square:
     """
-    This class represents a square and provides methods to work with it.
+    class representing a square and provides methods to work.
     """
 
     def __init__(self, size=0):
         """
-        Creates a new square.
+        Creating new square.
 
         Args:
-            size (int): The length of each side of the square (default is 0).
+            size (int):length of side of the square (default is 0).
         """
         self.__size = size
 
@@ -30,7 +30,6 @@ class Square:
 
         Args:
             value (int): The size to set.
-
         Raises:
             TypeError: If the provided size is not an integer.
             ValueError: If the provided size is less than 0.
