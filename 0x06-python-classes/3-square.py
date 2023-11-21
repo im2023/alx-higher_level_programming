@@ -1,14 +1,14 @@
 #!/usr/bin/python3
-"""Square class defination."""
+"""the square of class defination"""
 
 
 class Square:
-    """Square class body."""
+    """class body square"""
 
     def __init__(self, size=0):
-        """Square contructor.
-        Args:
-            size (int): The size of the new square.
+        """the square contructor
+        Arguments:
+            size (int):size of new square.
         """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
@@ -17,5 +17,5 @@ class Square:
         self.__size = size
 
     def area(self):
-        """Returning to new area of square."""
-        return (self.__size * self.__size)
+        """Returning to the new area of square."""
+        return self.__size * self.__size
