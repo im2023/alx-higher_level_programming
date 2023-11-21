@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#2-square.py
+
 """The definition of square class"""
 
 
