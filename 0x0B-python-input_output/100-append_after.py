@@ -4,11 +4,11 @@
 
 def append_after(filename="", search_string="", new_string=""):
     """the class body."""
-    txt = ""
+    text = ""
     with open(filename) as x:
         for l in x:
-            txt += l
+            text += l
             if search_string in l:
-                txt += new_string
+                text += new_string
     with open(filename, "w") as w:
-        w.write(txt)
+        w.write(text)
