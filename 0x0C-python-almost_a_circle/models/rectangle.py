@@ -121,14 +121,14 @@ class Rectangle(Base):
         }
 
     @staticmethod
-    def setter_validation(attribute, value):
+    def setter_validation(atrb, value):
         if type(value) != int:
-            raise TypeError("{} must be an integer".format(attribute))
-        if attribute == "x" or attribute == "y":
+            raise TypeError("{} must be an integer".format(atrb))
+        if atrb == "x" or atrb == "y":
             if value < 0:
-                raise ValueError("{} must be >= 0".format(attribute))
+                raise ValueError("{} must be >= 0".format(atrb))
         elif value <= 0:
-            raise ValueError("{} must be > 0".format(attribute))
+            raise ValueError("{} must be > 0".format(atrb))
 
     def __str__(self):
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
