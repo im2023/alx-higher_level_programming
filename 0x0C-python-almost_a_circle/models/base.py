@@ -23,4 +23,5 @@ class Base:
         """convert the result to Json."""
         if list_dictionaries is None or not list_dictionaries == []:
             return "[]"
-        return json.dumps(list_dictionaries)
+        else:
+            return json.dumps(list_dictionaries)
