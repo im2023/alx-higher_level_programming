@@ -2,7 +2,8 @@
 """Defining the Base class"""
 import csv
 import turtle
-from json import dumps, loads
+import json
+
 
 class Base:
     """representation of the Base class body"""
@@ -19,7 +20,7 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
-        """converting the result to Json."""
-        if list_dictionaries is None or list_dictionaries == []:
+        """convert the result to Json."""
+        if list_dictionaries is None or not list_dictionaries == []:
             return []
-        return dumps(list_dictionaries)
+        return json.dumps(list_dictionaries)
