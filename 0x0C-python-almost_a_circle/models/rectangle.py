@@ -27,7 +27,7 @@ class Rectangle(Base):
         """
         Setting attribute (__width).
         """
-        self.setter_validation("width", value)
+        self.setter_valid("width", value)
         self.__width = value
 
     @property
@@ -42,7 +42,7 @@ class Rectangle(Base):
         """
         Setting attribute (__height)
         """
-        self.setter_validation("height", value)
+        self.setter_valid("height", value)
         self.__height = value
 
     @property
@@ -57,7 +57,7 @@ class Rectangle(Base):
         """
         Setting the attribute (__x).
         """
-        self.setter_validation("x", value)
+        self.setter_valid("x", value)
         self.__x = value
 
     @property
@@ -72,7 +72,7 @@ class Rectangle(Base):
         """
         Setting attribute (__y).
         """
-        self.setter_validation("y", value)
+        self.setter_valid("y", value)
         self.__y = value
 
     def area(self):
@@ -121,7 +121,7 @@ class Rectangle(Base):
         }
 
     @staticmethod
-    def setter_validation(atrb, value):
+    def setter_valid(atrb, value):
         if type(value) != int:
             raise TypeError("{} must be an integer".format(atrb))
         if atrb == "x" or atrb == "y":
