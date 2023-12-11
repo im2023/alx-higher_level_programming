@@ -2,7 +2,7 @@
 """Defining the Base class"""
 import csv
 import turtle
-import json
+from json import dumps, loads
 
 
 class Base:
@@ -24,4 +24,4 @@ class Base:
         if list_dictionaries is None or not list_dictionaries == []:
             return "[]"
         else:
-            return json.dumps(list_dictionaries)
+            return dumps(list_dictionaries)
