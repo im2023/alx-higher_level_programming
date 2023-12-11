@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 """Defining the Base class"""
-import json
 import csv
 import turtle
-
+from json import dumps, loads
 
 class Base:
     """representation of the Base class body"""
@@ -23,4 +22,4 @@ class Base:
         """converting the result to Json."""
         if list_dictionaries is None or list_dictionaries == []:
             return []
-        return json.dumps(list_dictionaries)
+        return dumps(list_dictionaries)
