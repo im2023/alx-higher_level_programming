@@ -43,3 +43,14 @@ class Base:
         if json_string is None or not json_string:
             return []
         return loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """Returning the class instantiated from a dictionary"""
+        if dictionary and dictionary != {}:
+            if cls.__name__ == "Rectangle":
+                x = cls(1, 1)
+            else:
+                x = cls(1)
+            x.update(**dictionary)
+            return x
