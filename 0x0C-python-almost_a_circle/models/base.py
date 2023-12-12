@@ -36,3 +36,10 @@ class Base:
             else:
                 dict_list = [o.to_dictionary() for o in list_objs]
                 json_file.write(Base.to_json_string(dict_list))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """Returning the deserialization of a JSON"""
+        if json_string is None or not json_string:
+            return []
+        return loads(json_string)
