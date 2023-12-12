@@ -54,10 +54,10 @@ class Base:
                 x = cls(1)
             x.update(**dictionary)
             return x
+
     @classmethod
     def load_from_file(cls):
-        """Returning list of classes instantiated from file of JSON
-        """
+        """Returning list of classes instantiated from file of JSON"""
         fil = str(cls.__name__) + ".json"
         try:
             with open(fil, "r") as json_fl:
@@ -65,4 +65,3 @@ class Base:
                 return [cls.create(**n) for n in list_dicts]
         except IOError:
             return []
-
