@@ -99,3 +99,25 @@ class Base:
                 return [cls.create(**n) for n in list_dicts]
         except IOError:
             return []
+
+    @staticmethod
+    def draw(cls, list_rectangles, list_squares):
+        """the draw of Rectangles and Squares using turtle module"""
+        w = turtle.Screen()
+        x = turtle.Pen()
+        fig = list_rectangles + list_squares
+
+        for n in fig:
+            x.up()
+            x.goto(n.x, n.y)
+            x.down()
+            x.forward(n.width)
+            x.right(90)
+            x.forward(n.height)
+            x.right(90)
+            x.forward(n.width)
+            x.right(90)
+            x.forward(n.height)
+            x.right(90)
+
+        w.exitonclick()
