@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This script defines a City class
+definings the City class
 to work with MySQLAlchemy ORM.
 """
 
@@ -12,8 +12,8 @@ class City(Base):
     """City class
 
     Attributes:
-        __tablename__ (str): table name of class
-        id (int): id of the class
+        __tablename__ (str): table of class
+        id (int): The id of the class
         name (str): name of class
         state_id (int): state the city belonging to.
 
