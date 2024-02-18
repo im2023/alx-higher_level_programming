@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 """
-This script takes in an argument and
-displays all values in the states
-where `name` matches the argument
+Takes argument anddisplays values in
+states where `name` matches the argument
 from the database `hbtn_0e_0_usa`.
 
-This time the script is safe from
+the script is safe from
 MySQL injections!
 """
 
@@ -14,7 +13,7 @@ from sys import argv
 
 if __name__ == '__main__':
     """
-    Access to the database and get the states
+    Accessing to database and get the states
     from the database.
     """
 

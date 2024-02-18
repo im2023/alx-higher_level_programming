@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-This script prints the first State object
-from the database `hbtn_0e_6_usa`.
+prints the first State object
+from database `hbtn_0e_6_usa`.
 """
 
 from sys import argv
@@ -11,7 +11,7 @@ from sqlalchemy.orm import sessionmaker
 
 if __name__ == "__main__":
     """
-    Access to the database and get a state
+    Accessing the database and get a state
     from the database.
     """
 

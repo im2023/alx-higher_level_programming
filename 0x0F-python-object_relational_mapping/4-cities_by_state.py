@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This script lists all cities from
+The script is listing all cities from
 the database `hbtn_0e_4_usa`.
 """
 
