@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
-This script lists all State objects
-that contain the letter `a`
-from the database `hbtn_0e_6_usa`.
+listing State objects containing
+the letter `a` from database
+`hbtn_0e_6_usa`.
 """
 
 from sys import argv
@@ -25,3 +25,4 @@ if __name__ == "__main__":
 
     for instance in session.query(State).filter(State.name.contains('a')):
         print('{0}: {1}'.format(instance.id, instance.name))
+

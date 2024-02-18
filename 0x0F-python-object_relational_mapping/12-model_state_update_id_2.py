@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-This script changes the name of a State object
-from the database `hbtn_0e_6_usa`.
+changing name of State object
+from database `hbtn_0e_6_usa`.
 """
 
 from sys import argv
@@ -25,3 +25,4 @@ if __name__ == "__main__":
     ari_state.name = 'New Mexico'
     session.commit()
     session.close()
+

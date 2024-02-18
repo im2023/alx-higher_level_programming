@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-prints the first State object
+prints first State object
 from database `hbtn_0e_6_usa`.
 """
 
@@ -27,3 +27,4 @@ if __name__ == "__main__":
         print('Nothing')
     else:
         print('{0}: {1}'.format(instance.id, instance.name))
+
