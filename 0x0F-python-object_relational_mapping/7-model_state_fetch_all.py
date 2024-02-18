@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-lists all State objects
+The Script lists all State objects
 from database `hbtn_0e_6_usa`.
 """
 
@@ -11,7 +11,7 @@ from sqlalchemy.orm import sessionmaker
 
 if __name__ == "__main__":
     """
-    Access to the database and get the states
+    Accessing the database and get the states
     from the database.
     """
 
